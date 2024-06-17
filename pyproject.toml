@@ -8,6 +8,11 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 streamlit = "^1.35.0"
+llama-index = "^0.10.45"
+llama-index-llms-groq = "^0.1.4"
+groq = "^0.9.0"
+llama-index-llms-mistralai = "^0.1.15"
+pypdf = "^4.2.0"
 
 
 [build-system]

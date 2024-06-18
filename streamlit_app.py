@@ -126,5 +126,10 @@ if mission_ori is not None and cv_ori is not None:
                 response_pitch=llm.complete(query,temperature=0.00001)
                 st.write(response_pitch)
                 break
-            except:
-                pass
+            except Exception as e:
+                if attempt == 2:
+                    st.write(f"Error: {e}")
+                    st.write("Please try again later to have it nice and sexy")
+ 
+
+

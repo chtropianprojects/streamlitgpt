@@ -19,6 +19,8 @@ llama-index-readers-smart-pdf-loader = "^0.1.4"
 lm-format-enforcer = "^0.10.2"
 llama-cpp-python = "^0.2.78"
 llama-index-program-guidance = "^0.1.2"
+langchain = "^0.2.5"
+langchain-groq = "^0.1.5"
 
 
 [build-system]

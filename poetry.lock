@@ -420,6 +420,17 @@ files = [
 ]
 
 [[package]]
+name = "diskcache"
+version = "5.6.3"
+description = "Disk Cache -- Disk and file backed persistent cache."
+optional = false
+python-versions = ">=3"
+files = [
+    {file = "diskcache-5.6.3-py3-none-any.whl", hash = "sha256:5e31b2d5fbad117cc363ebaf6b689474db18a1f6438bc82358b024abd4c2ca19"},
+    {file = "diskcache-5.6.3.tar.gz", hash = "sha256:2c3a3fa2743d8535d832ec61c2054a1641f41775aa7c556758a109941e33e4fc"},
+]
+
+[[package]]
 name = "distro"
 version = "1.9.0"
 description = "Distro - an OS platform information API"
@@ -708,6 +719,70 @@ sniffio = "*"
 typing-extensions = ">=4.7,<5"
 
 [[package]]
+name = "guidance"
+version = "0.1.15"
+description = "A guidance language for controlling large language models."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "guidance-0.1.15-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:97e706352e857e14ed6ea3a9c948989fa6054165c4f358ea8ddc2dd8bc6dae87"},
+    {file = "guidance-0.1.15-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:a86782682bec294834922dfafa005dca788f4d17caec246b4b3a9cfe85e35bc4"},
+    {file = "guidance-0.1.15-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b177dae226339f17710a4bb904c0f14bfff8b1cde2abb0e5d714610a327af25f"},
+    {file = "guidance-0.1.15-cp310-cp310-musllinux_1_1_x86_64.whl", hash = "sha256:cb6758ab3edf53fad1261fb6f76c19fc0b5834748546b886b42d07a1b5a27584"},
+    {file = "guidance-0.1.15-cp310-cp310-win_amd64.whl", hash = "sha256:0bf86e83103f60228fd9a053b85f7fd6e00e6e82cbc8fa3426750781960519b0"},
+    {file = "guidance-0.1.15-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:6bb8a1bacb3b7183ca9fe53909de86ead37378419c43196fb1c128ef0d8c36e9"},
+    {file = "guidance-0.1.15-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:9a34f95be9a47d28b0c1424094f62f7640bd08c074f298439dd487a9978e2649"},
+    {file = "guidance-0.1.15-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:3e2b5c05d49cb6c9cf2fe75a4f295de180ac9cfd38bbacf2ed1445de4d1df432"},
+    {file = "guidance-0.1.15-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:d1f5e5fd786d7c8f11c5fa450cd0f49bcda0009bd303a68b05605bed9d4595ea"},
+    {file = "guidance-0.1.15-cp311-cp311-win_amd64.whl", hash = "sha256:0cb0bea33a5d8ebe844b5bad688c850700bbc64aa93cbf0b9a9d45ff6c05a04b"},
+    {file = "guidance-0.1.15-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:17d6da0917bcd9cb0f55f55bb26d39935cded8a04197667b374ba588a579db83"},
+    {file = "guidance-0.1.15-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:f02a30fdcbe9203e459ee53cdbf7c56025f8fc92a234d9ecec779b75ea1f79ce"},
+    {file = "guidance-0.1.15-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1aa7bfff237b921a8b879d23c7cd95d12091415bac89f593847f1e3dff0837b1"},
+    {file = "guidance-0.1.15-cp312-cp312-musllinux_1_1_x86_64.whl", hash = "sha256:ca4d2e764dba032d9f711f2b0b4a2bdfa88db209638cbbc989d936612d064193"},
+    {file = "guidance-0.1.15-cp312-cp312-win_amd64.whl", hash = "sha256:2b58ee49b9cff0d459f2f219ab280332825b31a66aee5c63be4dd94f7570f126"},
+    {file = "guidance-0.1.15-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:5d1c21ae581588ea3e1330c2e8678ba729ddc3b49ba427df3e6fdb190a040b41"},
+    {file = "guidance-0.1.15-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:857c0494384a2e68422dc73f6381f147b1c4ab50fc4211a3a877113ce47b2a89"},
+    {file = "guidance-0.1.15-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a34744b38617780606e50223b29c2949e68721863ce5a04e48ec08f3c4c1c2d8"},
+    {file = "guidance-0.1.15-cp38-cp38-musllinux_1_1_x86_64.whl", hash = "sha256:39e71647105771d65aef1b7defa7e4d8ab9887381c619df27a4ac7bd0b17693e"},
+    {file = "guidance-0.1.15-cp38-cp38-win_amd64.whl", hash = "sha256:dad928ff7d3901aacc5b414872592aedb56713b96b2e84b691e6e81323503c28"},
+    {file = "guidance-0.1.15-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:d914f169c1453c4c75751d31abcd6f69fe70979fed095f80e3bb31f7aaf6638f"},
+    {file = "guidance-0.1.15-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:c297c7cf80b71d1634a3b39c253c8f920d4283cefbf0d3fdf3a8c630b5e3cd36"},
+    {file = "guidance-0.1.15-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5ed8b557a8567b1495cd317630efaf3ee2094914a138aaef17729c367c8a77d4"},
+    {file = "guidance-0.1.15-cp39-cp39-musllinux_1_1_x86_64.whl", hash = "sha256:628c2966b00b489cacbc3451c89483395a692db6833f686a1f253dc1a4f47ae0"},
+    {file = "guidance-0.1.15-cp39-cp39-win_amd64.whl", hash = "sha256:8c9322edd24261cee7acdd1b41881e4d4043bfc0135bb811e3e1dc5fea97beaf"},
+    {file = "guidance-0.1.15-pp310-pypy310_pp73-macosx_10_9_x86_64.whl", hash = "sha256:3d041b3412820892692923ab81100531c848a802feb0ce4ac14a51e96368f542"},
+    {file = "guidance-0.1.15-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:bb612f4b7056c2128d07975d7dac4247b66e9b77a6e6af40d235581b9cad01fa"},
+    {file = "guidance-0.1.15-pp310-pypy310_pp73-win_amd64.whl", hash = "sha256:5c6f50a27be885cc00a2a74c8dd42fd9fad5a412b48f16c805f6991a89ef3dd9"},
+    {file = "guidance-0.1.15-pp38-pypy38_pp73-macosx_10_9_x86_64.whl", hash = "sha256:2a87ec1b62643b7528213e2c0066302e20e0cc5227f688ed5070c540cbbf7a64"},
+    {file = "guidance-0.1.15-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2eba9043184f980e8f57befc28e7157bb67fc366fc38b234f3b1c9fe415e6612"},
+    {file = "guidance-0.1.15-pp38-pypy38_pp73-win_amd64.whl", hash = "sha256:a8c1761a19b5d5f5e70181aaefaa5b73785472acfb4b8be5270b5f95aba39f35"},
+    {file = "guidance-0.1.15-pp39-pypy39_pp73-macosx_10_9_x86_64.whl", hash = "sha256:112ee48f2d20570a20d510396b63d8d72e0c17f98cf282d1137a7bff417ddc02"},
+    {file = "guidance-0.1.15-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8ce7921360a61118b185929dd1a9a143575b7d4cfc321c7b8848c5edcd337844"},
+    {file = "guidance-0.1.15-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:22656ae21c03130263840a244a9b054e2d7a4258aefe98b08d04bdd8effaf145"},
+    {file = "guidance-0.1.15.tar.gz", hash = "sha256:86413ce3f46de31280466f1da80f22b330fbf7ffbef7a4c9d8bbdc50159dbc12"},
+]
+
+[package.dependencies]
+diskcache = "*"
+numpy = "*"
+ordered-set = "*"
+platformdirs = "*"
+protobuf = "*"
+pydantic = "*"
+pyformlang = "*"
+requests = "*"
+tiktoken = ">=0.3"
+
+[package.extras]
+all = ["fastapi", "jsonschema", "openai (>=1.0)", "uvicorn"]
+azureai = ["openai (>=1.0)"]
+docs = ["huggingface-hub", "ipykernel", "ipython", "llama-cpp-python", "nbsphinx", "numpydoc", "sphinx", "sphinx-rtd-theme"]
+openai = ["openai (>=1.0)"]
+schemas = ["jsonschema"]
+server = ["fastapi", "uvicorn"]
+test = ["jupyter", "mypy (==1.9.0)", "papermill", "pytest", "pytest-cov", "torch", "transformers", "types-jsonschema", "types-protobuf", "types-regex", "types-requests"]
+
+[[package]]
 name = "h11"
 version = "0.14.0"
 description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
@@ -809,6 +884,28 @@ files = [
 ]
 
 [[package]]
+name = "install"
+version = "1.3.5"
+description = "Install packages from within code"
+optional = false
+python-versions = ">=2.7, >=3.5"
+files = [
+    {file = "install-1.3.5-py3-none-any.whl", hash = "sha256:0d3fadf4aa62c95efe8d34757c8507eb46177f86c016c21c6551eafc6a53d5a9"},
+    {file = "install-1.3.5.tar.gz", hash = "sha256:e67c8a0be5ccf8cb4ffa17d090f3a61b6e820e6a7e21cd1d2c0f7bc59b18e647"},
+]
+
+[[package]]
+name = "interegular"
+version = "0.3.3"
+description = "a regex intersection checker"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "interegular-0.3.3-py37-none-any.whl", hash = "sha256:b0c07007d48c89d6d19f7204972d369b2a77222722e126b6aa63aa721dc3b19c"},
+    {file = "interegular-0.3.3.tar.gz", hash = "sha256:d9b697b21b34884711399ba0f0376914b81899ce670032486d0d048344a76600"},
+]
+
+[[package]]
 name = "jinja2"
 version = "3.1.4"
 description = "A very fast and expressive template engine."
@@ -870,6 +967,28 @@ files = [
 
 [package.dependencies]
 referencing = ">=0.31.0"
+
+[[package]]
+name = "llama-cpp-python"
+version = "0.2.78"
+description = "Python bindings for the llama.cpp library"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "llama_cpp_python-0.2.78.tar.gz", hash = "sha256:3df7cfde84287faaf29675fba8939060c3ab3f0ce8db875dabf7df5d83bd8751"},
+]
+
+[package.dependencies]
+diskcache = ">=5.6.1"
+jinja2 = ">=2.11.3"
+numpy = ">=1.20.0"
+typing-extensions = ">=4.5.0"
+
+[package.extras]
+all = ["llama_cpp_python[dev,server,test]"]
+dev = ["black (>=23.3.0)", "httpx (>=0.24.1)", "mkdocs (>=1.4.3)", "mkdocs-material (>=9.1.18)", "mkdocstrings[python] (>=0.22.0)", "pytest (>=7.4.0)", "twine (>=4.0.2)"]
+server = ["PyYAML (>=5.1)", "fastapi (>=0.100.0)", "pydantic-settings (>=2.0.1)", "sse-starlette (>=1.6.1)", "starlette-context (>=0.3.6,<0.4)", "uvicorn (>=0.22.0)"]
+test = ["httpx (>=0.24.1)", "pytest (>=7.4.0)", "scipy (>=1.10)"]
 
 [[package]]
 name = "llama-index"
@@ -1108,6 +1227,21 @@ llama-index-core = ">=0.10.1,<0.11.0"
 llama-index-llms-openai = ">=0.1.1,<0.2.0"
 
 [[package]]
+name = "llama-index-program-guidance"
+version = "0.1.2"
+description = "llama-index program guidance integration"
+optional = false
+python-versions = ">=3.8.1,<4.0"
+files = [
+    {file = "llama_index_program_guidance-0.1.2-py3-none-any.whl", hash = "sha256:5fb537bd8762e1862a3c0faab669f773f884d7d7aa9503d2439ab13a0102414c"},
+    {file = "llama_index_program_guidance-0.1.2.tar.gz", hash = "sha256:588decad76e18cb84322bf3e58d4c02e9867134bafb98428e48c05df79de1deb"},
+]
+
+[package.dependencies]
+guidance = ">=0.1.10,<0.2.0"
+llama-index-core = ">=0.10.1,<0.11.0"
+
+[[package]]
 name = "llama-index-program-openai"
 version = "0.1.6"
 description = "llama-index program openai integration"
@@ -1175,6 +1309,21 @@ llama-index-core = ">=0.10.7,<0.11.0"
 llama-parse = ">=0.4.0,<0.5.0"
 
 [[package]]
+name = "llama-index-readers-smart-pdf-loader"
+version = "0.1.4"
+description = "llama-index readers smart_pdf_loader integration"
+optional = false
+python-versions = "<4.0,>=3.8.1"
+files = [
+    {file = "llama_index_readers_smart_pdf_loader-0.1.4-py3-none-any.whl", hash = "sha256:ba21a0ba8b46cd5a5f1205b4601147e469dccccac57de2902cab44794047f57a"},
+    {file = "llama_index_readers_smart_pdf_loader-0.1.4.tar.gz", hash = "sha256:40b135750612b175eea16297749946a82238776b398683fc6b1a605e7208300d"},
+]
+
+[package.dependencies]
+llama-index-core = ">=0.10.1,<0.11.0"
+llmsherpa = ">=0.1.4,<0.2.0"
+
+[[package]]
 name = "llama-parse"
 version = "0.4.4"
 description = "Parse files into RAG-Optimized formats."
@@ -1202,6 +1351,37 @@ files = [
 [package.dependencies]
 httpx = ">=0.20.0"
 pydantic = ">=1.10"
+
+[[package]]
+name = "llmsherpa"
+version = "0.1.4"
+description = "Strategic APIs to Accelerate LLM Use Cases"
+optional = false
+python-versions = "*"
+files = [
+    {file = "llmsherpa-0.1.4-py3-none-any.whl", hash = "sha256:88a651eacf221a997a9a9795903fbb70ddb211cd2e82831507de01284c917667"},
+    {file = "llmsherpa-0.1.4.tar.gz", hash = "sha256:18789840ded3d7e37db6a5c668dac2b0a58f20e426beaed3e60554dee0a5ecb0"},
+]
+
+[package.dependencies]
+urllib3 = "*"
+
+[[package]]
+name = "lm-format-enforcer"
+version = "0.10.2"
+description = "Enforce the output format (JSON Schema, Regex etc) of a language model"
+optional = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "lm_format_enforcer-0.10.2-py3-none-any.whl", hash = "sha256:762105d2ca94d47daf970bd415dda47fe19446af9106ea6f34d73a7b3ec24bc8"},
+    {file = "lm_format_enforcer-0.10.2.tar.gz", hash = "sha256:892e6b3a66d34e28c9b906d7d059bf02d2ec24726c5b789b3e22004b516c21f2"},
+]
+
+[package.dependencies]
+interegular = ">=0.3.2"
+packaging = "*"
+pydantic = ">=1.10.8"
+pyyaml = "*"
 
 [[package]]
 name = "markdown-it-py"
@@ -1575,6 +1755,20 @@ typing-extensions = ">=4.7,<5"
 datalib = ["numpy (>=1)", "pandas (>=1.2.3)", "pandas-stubs (>=1.1.0.11)"]
 
 [[package]]
+name = "ordered-set"
+version = "4.1.0"
+description = "An OrderedSet is a custom MutableSet that remembers its order, so that every"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "ordered-set-4.1.0.tar.gz", hash = "sha256:694a8e44c87657c59292ede72891eb91d34131f6531463aab3009191c77364a8"},
+    {file = "ordered_set-4.1.0-py3-none-any.whl", hash = "sha256:046e1132c71fcf3330438a539928932caf51ddbc582496833e23de611de14562"},
+]
+
+[package.extras]
+dev = ["black", "mypy", "pytest"]
+
+[[package]]
 name = "orjson"
 version = "3.10.5"
 description = "Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy"
@@ -1800,6 +1994,33 @@ typing = ["typing-extensions"]
 xmp = ["defusedxml"]
 
 [[package]]
+name = "pip"
+version = "24.0"
+description = "The PyPA recommended tool for installing Python packages."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "pip-24.0-py3-none-any.whl", hash = "sha256:ba0d021a166865d2265246961bec0152ff124de910c5cc39f1156ce3fa7c69dc"},
+    {file = "pip-24.0.tar.gz", hash = "sha256:ea9bd1a847e8c5774a5777bb398c19e80bcd4e2aa16a4b301b718fe6f593aba2"},
+]
+
+[[package]]
+name = "platformdirs"
+version = "4.2.2"
+description = "A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "platformdirs-4.2.2-py3-none-any.whl", hash = "sha256:2d7a1657e36a80ea911db832a8a6ece5ee53d8de21edd5cc5879af6530b1bfee"},
+    {file = "platformdirs-4.2.2.tar.gz", hash = "sha256:38b7b51f512eed9e84a22788b4bce1de17c0adb134d6becb09836e37d8654cd3"},
+]
+
+[package.extras]
+docs = ["furo (>=2023.9.10)", "proselint (>=0.13)", "sphinx (>=7.2.6)", "sphinx-autodoc-typehints (>=1.25.2)"]
+test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.4.3)", "pytest-cov (>=4.1)", "pytest-mock (>=3.12)"]
+type = ["mypy (>=1.8)"]
+
+[[package]]
 name = "protobuf"
 version = "4.25.3"
 description = ""
@@ -1997,6 +2218,41 @@ carto = ["pydeck-carto"]
 jupyter = ["ipykernel (>=5.1.2)", "ipython (>=5.8.0)", "ipywidgets (>=7,<8)", "traitlets (>=4.3.2)"]
 
 [[package]]
+name = "pydot"
+version = "2.0.0"
+description = "Python interface to Graphviz's Dot"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "pydot-2.0.0-py3-none-any.whl", hash = "sha256:408a47913ea7bd5d2d34b274144880c1310c4aee901f353cf21fe2e526a4ea28"},
+    {file = "pydot-2.0.0.tar.gz", hash = "sha256:60246af215123fa062f21cd791be67dda23a6f280df09f68919e637a1e4f3235"},
+]
+
+[package.dependencies]
+pyparsing = ">=3"
+
+[package.extras]
+dev = ["black", "chardet"]
+release = ["zest.releaser[recommended]"]
+tests = ["black", "chardet", "tox"]
+
+[[package]]
+name = "pyformlang"
+version = "1.0.10"
+description = "A python framework for formal grammars"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pyformlang-1.0.10-py3-none-any.whl", hash = "sha256:fd347bade2141feb6d29bfb23b90e87107910de8434566124ad42ef375662ceb"},
+    {file = "pyformlang-1.0.10.tar.gz", hash = "sha256:570b08915220447733753dd0716f537a0d8589aa0f9fa125d7b547872ff1ef6b"},
+]
+
+[package.dependencies]
+networkx = "*"
+numpy = "*"
+pydot = "*"
+
+[[package]]
 name = "pygments"
 version = "2.18.0"
 description = "Pygments is a syntax highlighting package written in Python."
@@ -2009,6 +2265,20 @@ files = [
 
 [package.extras]
 windows-terminal = ["colorama (>=0.4.6)"]
+
+[[package]]
+name = "pyparsing"
+version = "3.1.2"
+description = "pyparsing module - Classes and methods to define and execute parsing grammars"
+optional = false
+python-versions = ">=3.6.8"
+files = [
+    {file = "pyparsing-3.1.2-py3-none-any.whl", hash = "sha256:f9db75911801ed778fe61bb643079ff86601aca99fcae6345aa67292038fb742"},
+    {file = "pyparsing-3.1.2.tar.gz", hash = "sha256:a1bac0ce561155ecc3ed78ca94d3c9378656ad4c94c1270de543f621420f94ad"},
+]
+
+[package.extras]
+diagrams = ["jinja2", "railroad-diagrams"]
 
 [[package]]
 name = "pypdf"
@@ -3259,4 +3529,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "721786688833121fa1083c3e9b07911ac7f6c5070f805bf55201146499b2c8e6"
+content-hash = "97819c159515452ec379e256408d42d52ca15814b18ac9cd7c2198bc56c2b4ed"

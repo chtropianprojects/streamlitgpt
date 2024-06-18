@@ -14,13 +14,18 @@ import streamlit as st
 import warnings
 from request_models import ResumeScreenerDecision
 
+
+
+
+from llama_index.core.program import LLMTextCompletionProgram
+
 warnings.filterwarnings('ignore')
 
 
 MISTRAL_API_KEY = st.secrets["MISTRAL_API_KEY"]
-GROQ_API_KEY = st.secrets["MISTRAL_API_KEY"]
-llm = Groq(model="llama3-70b-8192", api_key=GROQ_API_KEY)
-llm = MistralAI(api_key=MISTRAL_API_KEY)
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+llm = Groq(model="llama3-8b-8192", api_key=GROQ_API_KEY)
+#llm = MistralAI(api_key=MISTRAL_API_KEY)
 summarizer = TreeSummarize(verbose=True, llm=llm,output_cls=ResumeScreenerDecision)
 
 PITCH_SALES_LANGUAGE="English"
@@ -35,3 +40,12 @@ You must provide a Sales pitch - the tone should be technical validation of the 
 
 """
 
+program = LLMTextCompletionProgram.from_defaults(
+    output_cls=ResumeScreenerDecision,
+    prompt_template_str=(
+        """Analyse the following job offer {job_offer} and check the fit regarding the CV of the candidate : {CV_candidate}\n
+        """
+    ),
+    llm=llm,
+    verbose=True,
+)

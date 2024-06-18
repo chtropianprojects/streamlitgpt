@@ -1,8 +1,9 @@
 from llama_index.core.bridge.pydantic import BaseModel, Field
 from typing import Any, Dict, List, Optional
 
+
 class MeaningfullMission(BaseModel):
-    """ the single mission that reinforce expertise of the candidate"""
+    """ The single mission that reinforce expertise of the candidate"""
     mission_customer :str= Field(description="The name of the customer")
     mission_technology_used :str= Field(description="The list of the technology used ")
     mission_content:str= Field(description="The content of the missing")
@@ -28,10 +29,10 @@ class ResumeScreenerDecision(BaseModel):
 
     criteria_not_decisions: List[CriteriaNotDecision] = Field(
    
-     description="The decisions regarding missing criterias to apply for the job in French"
+     description="The decisions regarding missing criterias to apply for the job"
     )
     
-    sales_pitch:   str = Field(description="The sales pitch to apply to the position always in french")
+    sales_pitch:  str = Field(description="The anonymous sales pitch to apply to the position always in french - not more than 400 characters")
     
     overall_reasoning: str = Field(
         description="The reasoning behind the overall decision"

@@ -47,5 +47,6 @@ program = LLMTextCompletionProgram.from_defaults(
         """
     ),
     llm=llm,
+    temperature = 0,
     verbose=True,
 )

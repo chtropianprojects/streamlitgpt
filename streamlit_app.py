@@ -27,6 +27,8 @@ st.title("CV placement plateform")
 mission_ori = st.sidebar.file_uploader("Upload a mission description",type ="pdf")
 cv_ori = st.sidebar.file_uploader("Upload a CV", type  = "pdf")
 
+
+
 st.markdown("This is an application to analyse if the CV can fit with the mission description")
 st.markdown("In order to understand if there is a fit, please upload both the mission and the CV in PDF format*")
 
@@ -44,6 +46,10 @@ genre = st.sidebar.radio(
     "Which parser do you want to use",
     ["Langchain", "llamaindex"],
     captions = ["Langchain - better chained", "Lama clever"])
+
+option = st.sidebar.selectbox(
+    "Please select which language you want for the sales pitch ",
+    ("French", "English", "Russian"))
 
 
 if mission_ori is not None and cv_ori is not None:
@@ -151,9 +157,11 @@ if mission_ori is not None and cv_ori is not None:
             st.write(response.overall_decision)
 
             # Sales Pitch
-            st.subheader("Sales Pitch:")
-            query = f"""Rewrite this *{response.sales_pitch}* in French. The sales pitch should be anonymous - and from the third person. It should be engaging
-                    I want to keep only the translation not comments.
+            st.subheader(f"Sales Pitch in {option}")
+            query = f"""Make a Sales pitch out of this {response}. The sales pitch should be anonymous - and from the third person. It should be engaging and respect gender of the candidate.
+                    The sales pitch should be in language :  {option}.
+                    The sales pitch should be 100 words long.
+                    I want to keep only the sales pitch - no comment. 
                     """
             response_pitch=llm.complete(query,temperature=0.00001)
             st.write(response_pitch)

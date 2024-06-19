@@ -1,5 +1,11 @@
-from llama_index.core.bridge.pydantic import BaseModel, Field
+from llama_index.core.bridge.pydantic import BaseModel, Field, ValidationError
 from typing import Any, Dict, List, Optional
+from enum import Enum
+
+class Gender(str, Enum):
+    """the gender of the candidate"""
+    MALE = 'male'
+    FEMALE = 'female'
 
 
 class MeaningfullMission(BaseModel):
@@ -21,6 +27,7 @@ class CriteriaNotDecision(BaseModel):
 class ResumeScreenerDecision(BaseModel):
     """The decision made by the resume screener."""
 
+    gender : Gender
     criteria_decisions: List[CriteriaDecision] = Field(
         description="The decisions made based on the criteria in german"
     )
